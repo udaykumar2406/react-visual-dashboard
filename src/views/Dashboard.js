@@ -72,7 +72,7 @@ function Dashboard() {
         <Row>
         
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+            <Card className="card-stats shadow">
               <Card.Body>
                 <Row>
                 <Col xs="6">
@@ -115,7 +115,7 @@ function Dashboard() {
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+            <Card className="card-stats shadow">
               <Card.Body>
                 <Row>
                   <Col xs="5">
@@ -127,7 +127,7 @@ function Dashboard() {
                     
                   </Col>
                   <Col xs="7">
-                    <div className="numbers">
+                    <div className="numbers shadow">
                       <p className="card-category">Revenue</p>
                       <Card.Title as="h4">$ 1,345</Card.Title>
                     </div>
@@ -144,7 +144,7 @@ function Dashboard() {
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+            <Card className="card-stats shadow">
               <Card.Body>
                 <Row>
                   <Col xs="5">
@@ -155,7 +155,7 @@ function Dashboard() {
                     </div>
                   </Col>
                   <Col xs="7">
-                    <div className="numbers">
+                    <div className="numbers shadow">
                       <p className="card-category">Errors</p>
                       <Card.Title as="h4">23</Card.Title>
                     </div>
@@ -172,7 +172,7 @@ function Dashboard() {
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+            <Card className="card-stats shadow">
               <Card.Body>
                 <Row>
                   <Col xs="5">

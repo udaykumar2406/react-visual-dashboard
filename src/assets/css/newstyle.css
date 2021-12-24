@@ -33,6 +33,7 @@ li.active.active-pro {
 }
 span.ml-1.score {
     font-size: x-large;
+    /* margin-top: 30px; */
 }
 img.logo-img {
     margin-left: -17px;
