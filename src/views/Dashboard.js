@@ -1,11 +1,13 @@
 import React from "react";
 import ChartistGraph from "react-chartist";
-import imagee from 'assets/img/logo 4.svg' ;
-import image1 from 'assets/img/logo 4.svg' ;
-import image2 from 'assets/img/logo 4.svg' ;
-import image3 from 'assets/img/logo 4.svg' ;
-
-// react-bootstrap components
+import imagee from "assets/img/logo 4.svg";
+import troly from "assets/img/trolly.svg";
+import market from "assets/img/market.svg";
+import sales from "assets/img/sales.svg";
+import image1 from "assets/img/logo 4.svg";
+import image2 from "assets/img/logo 4.svg";
+import image3 from "assets/img/logo 4.svg";
+import StyleSheet from "../assets/css/dashboard.module.css";
 import {
   Badge,
   Button,
@@ -23,302 +25,221 @@ import {
 import Chart from "./Chart";
 import CardChartone from "./CardChartone";
 import NewCh from "./NewCh";
-import Vert from "./Vert"
+import Vert from "./Vert";
 import Semichart from "./Semichart";
 import Newchart from "./Newchart";
 import ChartSix from "./ChartSix";
-
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import Chartpie from "./Chartpie";
+import { Scatter } from "recharts";
 
 function Dashboard() {
+  
   return (
     <>
-    <Row>
-      <Col lg="12" sm="12">
-       
-        <Card className="card-statss">
-        
-           <Row>
-           <Col xs="10">   
-          <h2>Hi John, how are you?</h2>
-          <p>All Systems are running smoothly !
-             You Have <span className="text-danger">3 unread messages</span></p>
-             </Col>
-             <Col xs="2">
-             <Form>
-              
-              <Form.Group >
-               
-                <Form.Control className="top-bar dashbooard"
-                  defaultValue="Today(23rd Dec 2021)"
-                  placeholder="Name"
-                  type="text"
-
-                >
-                  
-                </Form.Control>
-              {/* <i className="nc-icon nc-zoom-split"></i> */}
-              
-
-              </Form.Group>
-              </Form>
-               </Col>  
-             </Row>  
+      <Row>
+        <Col lg="12" sm="12">
+          <Card className="card-statss">
+            <Row style={{ marginTop: "-35px" }}>
+              <Col xs="10">
+                <h2>Hi John, how are you?</h2>
+                <p>
+                  All Systems are running smoothly ! You Have{" "}
+                  <span className="text-danger">3 unread messages</span>
+                </p>
+              </Col>
+              <Col xs="2">
+                <Form style={{ marginTop: "30px" }}>
+                  <Form.Group>
+                    <Form.Control
+                      className="dashbooard"
+                      defaultValue="Today(23rd Dec 2021)"
+                      placeholder="Name"
+                      type="text"
+                    ></Form.Control>
+                  </Form.Group>
+                </Form>
+              </Col>
+            </Row>
           </Card>
-          </Col>
-        </Row>
-      <Container fluid>
-      
-       
-        <Row>
-        
+        </Col>
+      </Row>
+      <Container>
+        <Row className="cards">
           <Col lg="3" sm="6">
-            <Card className="card-stats shadow">
-              <Card.Body>
-                <Row>
-                <Col xs="6">
-                  <h2 className="card-head">Weekely Sales</h2>
-                  <h2 className="main-head">$47K</h2>
-                  <button class="button button4"></button>
-                  </Col>
-                  <Col xs="6">
-                  <CardChartone/> 
-                  {/* <ChartSix/> */}
-                  </Col>
+            <Card className="card-stats container shadow">
+            <div>
+             <p style={{ marginTop: "20px" }}>
+                  <strong>Total sales</strong>
+                </p>
+                <div className="d-flex">
+                <h2>59.9k</h2>
+                <div>
+                <img style={{marginTop:"20px", marginLeft:"40px"}} src={ sales} width={"70px"} />
+                </div>
+              </div>
+             </div>
+            </Card>
+          </Col>
+          <Col lg="3" sm="6">
+            <Card className="card-stats container shadow">
+              <div>
+                <p style={{ marginTop: "20px" }}>
+                  <strong>Total Orders</strong>
+                </p>
+              </div>
 
-                </Row>
-             
-              </Card.Body>
-              {/* <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      
-                      <p class="text-danger">New Tickets</p>
-                    </div>
-                   
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">150GB</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  
-                  Users
-                </div>
-              </Card.Footer> */}
+              <div className="d-flex">
+                <h2>$57k</h2>
+                <img style={{marginLeft:"50px"}}src={troly} width={"60px"}/>
+              </div>
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats shadow">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                    <p class="text-danger">Daily Earnings</p>
-                      {/* <i className="nc-icon nc-light-3 text-success"></i> */}
-                     
-                    </div>
-                    
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers shadow">
-                      <p className="card-category">Revenue</p>
-                      <Card.Title as="h4">$ 1,345</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="far fa-calendar-alt mr-1"></i>
-                  Items
-                </div>
-              </Card.Footer>
+            <Card className="card-stats container shadow">
+             <div>
+             <p style={{ marginTop: "20px" }}>
+                  <strong>Market Share</strong>
+                </p>
+                <div className="d-flex">
+                <h2>$87k</h2>
+                <img style={{marginLeft:"50px"}} src={ troly} width={"60px"}/>
+              </div>
+             </div>
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats shadow">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    
-                    <div className="icon-big text-center icon-warning">
-                      {/* <i className="nc-icon nc-vector text-danger"></i> */}
-                      <p className="text-danger">New Replies</p>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers shadow">
-                      <p className="card-category">Errors</p>
-                      <Card.Title as="h4">23</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="far fa-clock-o mr-1"></i>
-                  Delivery Status
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-          <Col lg="3" sm="6">
-            <Card className="card-stats shadow">
-              <Card.Body>
-                <Row>
-                  <Col xs="5">
-                    
-                    <div className="icon-big text-center icon-warning">
-                    {/* <p className="text-danger">Closed Today</p> */}
-                       <i className="nc-icon nc-favourite-28 text-primary"></i> 
-                       <div>
-       
-         <img src={imagee} />
-     </div>
-                    </div>
-                  </Col>
-                  <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Followers</p>
-                      <Card.Title as="h4">+45K</Card.Title>
-                    </div>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="fas fa-redo mr-1"></i>
-                  Products
-                </div>
-              </Card.Footer>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="6">
-            <Card>
-              <Card.Header>
-                <Card.Title as="h4">Chart Heading 1</Card.Title>
-                <hr/>
-                <p className="card-category">Sub Heading</p>
-              </Card.Header>
-              <Card.Body>
-               
-                <div>
-                 <p>Chart 1 will be here </p>
-                 
-                </div>
-              </Card.Body>
-              {/* <Card.Footer>
-                <div className="legend">
-                  <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Click <i className="fas fa-circle text-warning"></i>
-                  Click Second Time
-                </div>
-                <hr></hr>
-                <div className="stats">
-                  <i className="fas fa-history"></i>
-                  Updated 3 minutes ago
-                </div>
-              </Card.Footer> */}
-            </Card>
-          </Col>
-          
-          <Col md="6">
-            <Card>
-              <Card.Header>
-                <Card.Title as="h4">Chart Heading 2</Card.Title>
-                <hr/>
-                <p className="card-category">Sub Heading</p>
-              </Card.Header>
-              <Card.Body>
-               
-                <div>
-                 <p>Chart 2 will be here </p>wil
-                </div>
-                <div>
-                  
-                </div>
-                <div>
-
-                </div>
-                {/* <div className="legend">
-                  <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Bounce <i className="fas fa-circle text-warning"></i>
-                  Unsubscribe
-                </div>
-                <hr></hr>
-                <div className="stats">
-                  <i className="far fa-clock"></i>
-                  Campaign sent 2 days ago
-                </div> */}
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="6">
-            <Card>
-              <Card.Header>
-                <Card.Title as="h4">Chart Heading 3</Card.Title>
-                <hr/>
-                <p className="card-category">Sub Heading</p>
-              </Card.Header>
-              <Card.Body>
-              {/* <NewCh/> */}
-              Chart 3 will be here
-              </Card.Body>
-              
-              
-              {/* <Card.Footer>
-                <div className="legend">
-                  <i className="fas fa-circle text-info"></i>
-                  Tesla Model S <i className="fas fa-circle text-danger"></i>
-                  BMW 5 Series
-                </div>
-                <hr></hr>
-                <div className="stats">
-                  <i className="fas fa-check"></i>
-                  Data information certified
-                </div>
-              </Card.Footer> */}
-            </Card>
-          </Col>
-          <Col md="6">
-            <Card className="card-tasks">
-              <Card.Header>
-                <Card.Title as="h4">Chart Heading 4</Card.Title>
-                <hr/>
-                <p className="card-category">Sub Heading</p>
-              </Card.Header>
-              <Card.Body>
-                <div className="table-full-width">
-                 Chart 4 will be here
-                </div>
-              </Card.Body>
-              {/* <Card.Footer>
-                <hr></hr>
-                <div className="stats">
-                  <i className="now-ui-icons loader_refresh spin"></i>
-                  Updated 3 minutes ago
-                </div>
-              </Card.Footer> */}
+            <Card className="card-stats container shadow">
+            <div>
+             <p style={{ marginTop: "20px" }}>
+                  <strong>Weekly sales</strong>
+                </p>
+                <div className="d-flex">
+                <h2>59.9k</h2>
+                <img style={{marginLeft:"40px"}} src={ market} width={"60px"}/>
+              </div>
+             </div>
             </Card>
           </Col>
         </Row>
       </Container>
+      <Row>
+        <Col className="col-lg-12 line shadow container">
+          <Card className="">
+            <Card.Body>
+              <div className="charts col-lg-12 d-flex">
+                <div className="reports">
+                  <h3>Daily Reports</h3>
+                  <h1 className="text-primary">$34040</h1>
+                  <h4 className="text-primary">North America</h4>
+                  <p>
+                    <div>
+                      The total number of sessions
+                      with in the date range.it is the
+                      period time a user is actively
+                      engaged with your website,
+                      page or app etc
+                    </div>
+                  </p>
+                </div>
+                <div className="bars">
+                  <div>
+                    <div className="d-flex">
+                      <div>
+                        <p className="text">Illinous</p>
+                        <p className="text">Washington</p>
+                        <p className="text">Mississippi</p>
+                        <p className="text">Califomia</p>
+                        <p className="text">Marylad</p>
+                        <p className="text">Alaska</p>
+                      </div>
+
+                      <div className="pro">
+                        <div class="progress">
+                          <div
+                            class="progress-bar progress-bar-striped"
+                            style={{color:"#FB200 "}}
+                            role="progressbar"
+                            style={{ width: "15%" }}
+                            aria-valuenow="10"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <div class="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-success"
+                            role="progressbar"
+                            style={{ width: "25%", padding: "20px" }}
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <div class="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-primary"
+                            role="progressbar"
+                            style={{ width: "35%" }}
+                            aria-valuenow="35"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <div class="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-secondary"
+                            role="progressbar"
+                            style={{ width: "45%" }}
+                            aria-valuenow="45"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <div class="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-info"
+                            role="progressbar"
+                            style={{ width: "55%" }}
+                            aria-valuenow="55"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <div class="progress">
+                          <div
+                            className="progress-bar progress-bar-striped bg-danger"
+                            role="progressbar"
+                            style={{ width: "65%" }}
+                            aria-valuenow="65"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div className="number">
+                        <h4 className="number1">100</h4>
+                        <h4 className="number1">345</h4>
+                        <h4 className="number1">453</h4>
+                        <h4 className="number1">548</h4>
+                        <h4 className="number1">665</h4>
+                        <h4 className="number1">842</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="graph d-flex">
+                  <div style={{marginLeft:"30px" , marginTop:"-60px"}}>
+                  <Chartpie />
+                  
+                  </div>
+                  
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </>
   );
 }
