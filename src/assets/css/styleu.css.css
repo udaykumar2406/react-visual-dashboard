@@ -2,15 +2,15 @@ body {
     
     overflow-x: hidden;/* Hide horizontal scrollbar */
   }
-button#dropdown-fixed-plugin{
-    display: none;
-
-}
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
     position: relative;
     width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+}
+button#dropdown-fixed-plugin{
+    display: none;
+
 }
 li.active.active-pro {
     display: none;
@@ -39,7 +39,6 @@ li.active.active-pro {
 }
 span.ml-1.score {
     font-size: x-large;
-    /* margin-top: 30px; */
 }
 img.logo-img {
     margin-left: -17px;
@@ -70,13 +69,24 @@ input.top-bar.dashbooard.form-control {
     background-color: #D8D8D8;
 }
 .main-panel > .content {
-    padding: 24px 12px;
+    padding: 24px 24px;
     min-height: calc(100% - 123px);
-    background-color: #F4F4F4;
+    background-color: #FFFFFF;
 }
+
 .Gray-Content.container-fluid {
     background-color: #F4F4F4;
     padding: 24px;
+}
+.card {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 32px;
+    margin-bottom: 24px;
+   
+}
+.card .card-header {
+    padding: 0px 0px 0;
 }
 h2.card-head {
     font-size: 16px;
@@ -97,22 +107,6 @@ h2.main-head {
    
     margin-bottom: -10px;
 }
-.card-stats{
-    border-radius: 5px;
-    height: 200px;
-}
-.bars{
-    margin-left: 100px;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-.card {
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    padding: 32px;
-    margin-bottom: 24px;
-   
-}
 .navbar .navbar-toggler {
     vertical-align: middle;
     outline: 0;
@@ -120,6 +114,9 @@ h2.main-head {
     border: none;
     /* color: white; */
 }
+/* line.recharts-cartesian-axis-line {
+    STROKE: WHITE;
+} */
 .recharts-legend-wrapper {
     position: relative;
 }
@@ -163,6 +160,10 @@ strong.me-auto {
     font-size: large;
     color:#000099;
 }
+.toast {
+    font-size: medium;
+    border: none;
+}
 span.card-para {
     font-size: x-large;
     color:#000099;
@@ -182,57 +183,6 @@ span.card-text {
     padding-left: 5px;
     padding-right: 5px;
 }
-.toast {
-    font-size: medium;
-    border: none;
-}
-.main-panel {
-    overflow-x: hidden;
-}
-h2.card-head {
-    font-size: 16px;
-    font-weight: bold;
-}
-.button4 {
-    border-radius: 30%;
-    padding: 7px 15px;
-    background-color: #008578;
-}
-h2.main-head {
-    font-weight: bold;
-}
-.text{
-    margin-top: -5px;
-    margin-bottom: 45px;
-}
-.progress{
-    width: 250px;
-    margin-left: 20px;
-    margin-bottom: 55px;
-}
-.num{
-    margin-left: 20px;
-    margin-top: -4px;
-}
-.size{
-    padding: 15px;
-}
-.number{
-    margin-left: 15px;
-    margin-top: -35px;
-}
-.number1{
-    margin-bottom: 35px;
-}
-.graph{
-    margin: 30px;
-}.top-bar{
-    padding-left: 180px;
-}
-.line{
-    padding: 30px;
-}
-
 .noti.card-body {
     padding: 0px !important;
 }
@@ -252,7 +202,3 @@ td.notf {
     padding: 24px;
     color: #FFFFFF;
 }
-.progress1{
-    margin-bottom: 0px;
-}
-
