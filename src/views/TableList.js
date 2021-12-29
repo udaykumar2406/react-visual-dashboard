@@ -31,120 +31,366 @@ import chartist from "chartist";
 function TableList() {
   return (
     <>
-      < div className=" " style={{margin:'15px',backgroundColor:'#eeeeee'}}>
-        <div className=" " style={{ margin: "15px",}}>
+      <div
+        className=" "
+        style={{
+          margin: "10px",
+          marginTop: "-5px",
+          backgroundColor: "#eeeeee",
+        }}
+      >
+        <div className=" " style={{ margin: "10px", marginTop: "5px" }}>
           <div className="d-flex">
-            <div className="card container" style={{width:'681.75px',height:'334.5px',marginTop:'15px'}}>
-              <p style={{ marginTop: "-19px",fontSize:'22px' }}><strong>Today's sales</strong></p>
-              <p style={{marginTop:'-10px',fontSize:'13px' }}>looking all things are good</p>
-              <p style={{ marginTop: "-9px", fontSize:'22px'}}>
-                <strong>$362531.00</strong>
-              </p>
-              <div style={{ marginLeft: "-60px",marginTop:'-15px'}}>
-                <Chartbar />
+            <div
+              className="card container"
+              style={{
+                width: "681.75px",
+                height: "334.5px",
+                marginTop: "15px",
+              }}
+            >
+              <div
+                style={{
+                  marginTop: "5px",
+                  marginLeft: "-7px",
+                  marginRight: "5px",
+                  marginBottom: "5px",
+                }}
+              >
+                <p style={{ marginTop: "-19px", fontSize: "22px" }}>
+                  <strong>Today's sales</strong>
+                </p>
+                <p style={{ marginTop: "-10px", fontSize: "13px" }}>
+                  looking all things are good
+                </p>
+                <p style={{ marginTop: "-9px", fontSize: "22px" }}>
+                  <strong>$362531.00</strong>
+                </p>
+                <div style={{ marginLeft: "-60px", marginTop: "-15px" }}>
+                  <Chartbar />
+                </div>
               </div>
             </div>
             <div
               className="card container"
-
-              style={{width:'443.25px', height:'334.5px', marginLeft: "18px",marginTop:'15px' }}
+              style={{
+                width: "443.25px",
+                height: "334.5px",
+                marginLeft: "18px",
+                marginTop: "15px",
+                marginRight: "8px",
+              }}
             >
-              <p style={{ marginTop: "-22px",marginLeft: "-4px", fontSize:'22px' }}>
-                <strong>Top Performer</strong>
-              </p>
-              <div style={{margin:'-15px'}}>
-              <div className=" d-flex" style={{ margin: "10px"}}>
-                <img src={pic1}  />
-                <h4 style={{ margin: "10px",marginLeft:'35px',fontSize:'13px'}}>Brandon Washington</h4>
-              </div>
-              <div className=" d-flex" style={{ margin: "10px"}}>
-                <img src={pic2}  />
-                <h4 style={{ margin: "10px",marginLeft:'35px',fontSize:'13px'}}>Brandon Washington</h4>
-              </div>
-              <div className=" d-flex" style={{ margin: "10px"}}>
-                <img src={pic3} style={{height:'45px'}}/>
-                <h4 style={{ margin: "10px",marginLeft:'35px',fontSize:'13px'}}>Brandon Washington</h4>
-              </div>
-              <div className=" d-flex" style={{ margin: "10px"}}>
-                <img src={pic4} />
-                <h4 style={{ margin: "10px",marginLeft:'35px',fontSize:'13px' }}>Brandon Washington</h4>
-              </div>
+              <div
+                style={{
+                  marginTop: "5px",
+                  marginLeft: "5px",
+                  marginRight: "5px",
+                  marginBottom: "5px",
+                }}
+              >
+                <p
+                  style={{
+                    marginTop: "-19px",
+                    marginLeft: "-12px",
+                    fontSize: "22px",
+                  }}
+                >
+                  <strong>Top Performer</strong>
+                </p>
+                <div style={{ margin: "0px" }}>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img src={pic1} style={{ marginLeft: "-21px" }} />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "35px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Brandon Washington
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "65px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img src={pic2} style={{ marginLeft: "-21px" }} />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "35px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Brandon Washington
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "65px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img
+                      src={pic3}
+                      style={{ height: "45px", marginLeft: "-21px" }}
+                    />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "34px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Brandon Washington
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "65px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img src={pic4} style={{ marginLeft: "-21px" }} />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "35px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Brandon Washington
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "65px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="d-flex">
-            <div className="card container" style={{width:'592.5px',height:'433.5px',marginTop:'-5px'}}>
-              <h3 style={{ marginTop: "-15.5px",fontSize:'22px',marginLeft:'12px' }}>Last Orders</h3>
-              <table class="table" style={{fontSize:'13px'}}>
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Id</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style={{fontSize:'13px'}}>Brandon Washington</td>
-                    <td>32456</td>
-                    <td>28/12/2021</td>
-                    <td>$128</td>
-                  </tr>
-                  <tr>
-                    <td style={{fontSize:'13px'}}>Brandon Washington</td>
-                    <td>23423</td>
-                    <td>28/12/2021</td>
-                    <td>$128</td>
-                  </tr>
-                  <tr>
-                    <td style={{fontSize:'13px'}}>Brandon Washington</td>
-                    <td>76453</td>
-                    <td>28/12/2021</td>
-                    <td>$128</td>
-                  </tr>
-                  <tr>
-                    <td style={{fontSize:'13px'}}>Brandon Washington</td>
-                    <td>76453</td>
-                    <td>28/12/2021</td>
-                    <td>$128</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="card" style={{ marginLeft: "18px", width:'633.03px',height:'433.61px',marginTop:'-5px' }}>
-              <h2 style={{ marginTop: "-14px",fontSize:'22px',marginLeft:'8px' }}>Sales by countries</h2>
-              <div className="d-flex">
-              <table class="table"style={{fontSize:'13px',marginLeft:'-5px'}}> 
-                <tbody>
-                  <tr>
-                  <td>
-                    <img src={usa} width={"50px"} />
-                    </td>
-                    <td>USA</td>
-                    <td>$128</td>
-                  </tr>
-                  <tr>
-                    <td>
-                    <img src={austraila} width={"50px"} />
-                    </td>
-                    <td>Austrila</td>
-                    <td>$128</td>
-                  </tr>
-                  <tr>
-                  <td>
-                    <img src={uk} width={"50px"} />
-                    </td>
-                    <td>U K</td>
-                    <td>$128</td>
-                  </tr>
-                </tbody>
-              </table>
-              
+            <div
+              className="card container"
+              style={{ width: "592.5px", height: "403.5px", marginTop: "-5px" }}
+            >
+              <div style={{ marginLeft: "-19px" }}>
+                <p
+                  style={{
+                    marginTop: "-13.5px",
+                    fontSize: "22px",
+                    marginLeft: "12px",
+                  }}
+                >
+                  <strong>Last Orders</strong>
+                </p>
+                <table class="table" style={{ fontSize: "13px" }}>
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Id</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style={{ fontSize: "13px" }}>
+                        <img
+                          src={pic1}
+                          style={{ marginLeft: "-2px", paddingRight: "10px" }}
+                        />
+                        Brandon Washington
+                      </td>
+                      <td>32456</td>
+                      <td>28/12/2021</td>
+                      <td>$128</td>
+                    </tr>
+                    <tr>
+                      <td style={{ fontSize: "13px" }}>
+                        <img
+                          src={pic2}
+                          style={{ marginLeft: "-2px", paddingRight: "10px" }}
+                        />
+                        Brandon Washington
+                      </td>
+                      <td>23423</td>
+                      <td>28/12/2021</td>
+                      <td>$128</td>
+                    </tr>
+                    <tr>
+                      <td style={{ fontSize: "13px" }}>
+                        <img
+                          src={pic3}
+                          style={{
+                            height: "45px",
+                            marginLeft: "-2px",
+                            paddingRight: "10px",
+                          }}
+                        />
+                        Brandon Washington
+                      </td>
+                      <td>76453</td>
+                      <td>28/12/2021</td>
+                      <td>$128</td>
+                    </tr>
+                    <tr>
+                      <td style={{ fontSize: "13px" }}>
+                        <img
+                          src={pic4}
+                          style={{ marginLeft: "-2px", paddingRight: "10px" }}
+                        />
+                        Brandon Washington
+                      </td>
+                      <td>76453</td>
+                      <td>28/12/2021</td>
+                      <td>$128</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div style={{marginLeft:'120px'}}>
-                {/* <Chartgeo/> */}
+            </div>
+            <div
+              className="card"
+              style={{
+                marginLeft: "18px",
+                width: "592px",
+                height: "403.5px",
+                marginTop: "-5px",
+                marginRight: "8px",
+              }}
+            >
+              <div style={{ marginLeft: "-17px", marginTop: "1px" }}>
+                <p
+                  style={{
+                    marginTop: "-15px",
+                    fontSize: "22px",
+                    marginLeft: "8px",
+                  }}
+                >
+                  <strong>Sales by countries</strong>
+                </p>
+                <div className="">
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img
+                      src={usa}
+                      style={{ height: "45px",width:'60px',height:'30px',marginTop:'8px' }}
+                    />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "34px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      USA
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "250px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img
+                      src={austraila}
+                      style={{ height: "45px",width:'60px',height:'30px',marginTop:'8px' }}
+                    />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "34px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Austraila
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "225px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img
+                      src={uk}
+                      style={{ height: "45px",width:'60px',height:'30px',marginTop:'8px'}}
+                    />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "34px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      United Kingdom
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "183px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
+                  <div className=" d-flex" style={{ margin: "10px" }}>
+                    <img
+                      src={germany}
+                      style={{ height: "45px",width:'60px',height:'30px',marginTop:'8px'}}
+                    />
+                    <h4
+                      style={{
+                        margin: "10px",
+                        marginLeft: "34px",
+                        fontSize: "13px",
+                      }}
+                    >
+                      Germany
+                    </h4>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        marginLeft: "222px",
+                        marginTop: "15px",
+                      }}
+                    >
+                      1hr ago
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div style={{ marginLeft: "120px" }}>{/* <Chartgeo/> */}</div>
             </div>
           </div>
         </div>

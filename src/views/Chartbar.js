@@ -86,12 +86,12 @@ export default function App() {
         left: 20,
         bottom: 5
       }}
-      barSize={15}
+      barSize={12.5}
     >
       <XAxis dataKey="name" scale="point" padding={{ left: 15, right: 15 }} style={{fontSize:'9px'}} />
       <YAxis style={{fontSize:'9px'}} />
       <Tooltip />
-      <Legend />
+      {/* <Legend /> */}
       <CartesianGrid strokeDasharray="3 3" />
       <Bar dataKey="pv" fill="#000099"/>
     </BarChart>

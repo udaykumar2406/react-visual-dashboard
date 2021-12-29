@@ -58,15 +58,16 @@ function Header() {
                 onClick={(e) => e.preventDefault()}
                 className="m-0"
               >
-                <span className="ml-1 score">NPI LaunchPad ScoreCard</span>
+                <span className="ml-1 score" style={{marginTop:'-10px'}}>NPI LaunchPad ScoreCard</span>
               </Nav.Link>
             </Nav.Item>
           </Nav> 
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto" navbar >
           <Nav.Item>
               <Form>
                       <Form.Group>
                         <Form.Control className="top-bar"
+                        
                           defaultValue="Search"
                           placeholder="Name"
                           type="text"
