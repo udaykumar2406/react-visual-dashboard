@@ -12,7 +12,7 @@ import {
 
 const data = [
   {
-    name: "JAN",
+    name: "Jan",
     uv: 200,
     pv: 150,
   },
@@ -37,7 +37,7 @@ const data = [
     pv: 143,
   },
   {
-    name: "JUNE",
+    name: "JUN",
     uv: 156,
     pv: 125,
   }
@@ -77,8 +77,8 @@ const data = [
 export default function App() {
   return (
     <BarChart
-      width={500}
-      height={300}
+      width={600}
+      height={250}
       data={data}
       margin={{
         top: 5,
@@ -86,14 +86,14 @@ export default function App() {
         left: 20,
         bottom: 5
       }}
-      barSize={20}
+      barSize={15}
     >
-      <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-      <YAxis />
+      <XAxis dataKey="name" scale="point" padding={{ left: 15, right: 15 }} style={{fontSize:'9px'}} />
+      <YAxis style={{fontSize:'9px'}} />
       <Tooltip />
       <Legend />
       <CartesianGrid strokeDasharray="3 3" />
-      <Bar dataKey="pv" fill="#8884d8"/>
+      <Bar dataKey="pv" fill="#000099"/>
     </BarChart>
   );
 }

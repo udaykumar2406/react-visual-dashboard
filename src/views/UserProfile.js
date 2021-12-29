@@ -77,7 +77,7 @@ function User() {
               {" "}
               32%{" "}
             </progress>
-            <p style={{marginLeft:"10px"}}>312</p>
+            <p style={{marginLeft:"5px"}}>312</p>
             </div>
             <p style={{margin:"0"}}>card 2</p>
             <div className="d-flex">
@@ -91,7 +91,7 @@ function User() {
               {" "}
               32%{" "}
             </progress>
-            <p>123</p>
+            <p style={{marginLeft:"5px"}}>123</p>
             </div>
             <p style={{margin:"0"}}>card 3</p>
             <div className="d-flex">
@@ -105,7 +105,7 @@ function User() {
               {" "}
               32%{" "}
             </progress>
-            <p>123</p>
+            <p style={{marginLeft:"5px"}}>123</p>
             </div>
             <p style={{margin:"0"}}>card 4</p>
             <div className="d-flex">
@@ -119,7 +119,7 @@ function User() {
               {" "}
               32%{" "}
             </progress>
-            <p>123</p>
+            <p style={{marginLeft:"5px"}}>123</p>
             </div>
             <p style={{margin:"0"}}>card 5</p>
             <div className="d-flex">
@@ -133,11 +133,11 @@ function User() {
               {" "}
               32%{" "}
             </progress>
-            <p>123</p>
+            <p style={{marginLeft:"5px"}}>123</p>
             </div>
           </div>
           <Col md="6">
-            <Card className="card-tasks">
+            <Card className="card-tasks container">
               <Card.Header>
                 <Card.Title as="h4">Top Products</Card.Title>
               </Card.Header>
@@ -200,7 +200,7 @@ function User() {
             </Card>
           </Col>
           <Col md="3">
-            <Card className="card-tasks">
+            <Card className="card-tasks container">
               <Card.Header>
                 <Card.Title as="h4">Notifications</Card.Title>
               </Card.Header>

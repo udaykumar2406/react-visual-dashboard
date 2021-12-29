@@ -74,7 +74,7 @@ input.top-bar.dashbooard.form-control {
     min-height: calc(100% - 123px);
     background-color: #F4F4F4;
 }
-.Gray-Content.container-fluid {
+.Gray-Content {
     background-color: #F4F4F4;
     padding: 24px;
 }
@@ -125,12 +125,6 @@ h2.main-head {
 }
 .bg-info {
     background-color: #00A3AD!important;
-}
-.progress {
-    display: flex;
-    
-    height: 0.5 rem;
-    height: 10px;
 }
 .btn-danger {
     border-color:#CA001B;
@@ -254,5 +248,19 @@ td.notf {
 }
 .progress1{
     margin-bottom: 0px;
+}
+.card-tasks{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.table-full-width{
+    margin-top: -25px;
+}
+.graph{
+    margin-top: -20px;
+}
+.card{
+    margin-left: 10px;
 }
 
