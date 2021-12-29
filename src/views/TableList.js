@@ -31,13 +31,13 @@ import chartist from "chartist";
 function TableList() {
   return (
     <>
-      < div className=" " style={{margin:'19.5px',backgroundColor:'#eeeeee'}}>
+      < div className=" " style={{margin:'15px',backgroundColor:'#eeeeee'}}>
         <div className=" " style={{ margin: "15px",}}>
           <div className="d-flex">
-            <div className="card shadow container" style={{width:'681.75px',height:'334.5px',marginTop:'15px'}}>
-              <p style={{ marginTop: "-30px",marginLeft:'-20px',fontSize:'22px' }}><strong>Today's sales</strong></p>
-              <p style={{marginTop:'-20px',marginLeft:'-15px',fontSize:'13px' }}>looking all things are good</p>
-              <p style={{ marginTop: "-15px",marginLeft:'-15px' , fontSize:'22px'}}>
+            <div className="card container" style={{width:'681.75px',height:'334.5px',marginTop:'15px'}}>
+              <p style={{ marginTop: "-19px",fontSize:'22px' }}><strong>Today's sales</strong></p>
+              <p style={{marginTop:'-10px',fontSize:'13px' }}>looking all things are good</p>
+              <p style={{ marginTop: "-9px", fontSize:'22px'}}>
                 <strong>$362531.00</strong>
               </p>
               <div style={{ marginLeft: "-60px",marginTop:'-15px'}}>
@@ -45,11 +45,11 @@ function TableList() {
               </div>
             </div>
             <div
-              className="card shadow container"
+              className="card container"
 
               style={{width:'443.25px', height:'334.5px', marginLeft: "18px",marginTop:'15px' }}
             >
-              <p style={{ marginTop: "-25px",marginLeft: "-25px", fontSize:'22px' }}>
+              <p style={{ marginTop: "-22px",marginLeft: "-4px", fontSize:'22px' }}>
                 <strong>Top Performer</strong>
               </p>
               <div style={{margin:'-15px'}}>
@@ -73,8 +73,8 @@ function TableList() {
             </div>
           </div>
           <div className="d-flex">
-            <div className="card shadow container" style={{width:'592.5px',height:'433.5px',marginTop:'-5px'}}>
-              <h3 style={{ marginTop: "-19.4px",fontSize:'22px' }}>Last Orders</h3>
+            <div className="card container" style={{width:'592.5px',height:'433.5px',marginTop:'-5px'}}>
+              <h3 style={{ marginTop: "-15.5px",fontSize:'22px',marginLeft:'12px' }}>Last Orders</h3>
               <table class="table" style={{fontSize:'13px'}}>
                 <thead>
                   <tr>
@@ -112,10 +112,10 @@ function TableList() {
                 </tbody>
               </table>
             </div>
-            <div className="card shadow" style={{ marginLeft: "18px", width:'633.03px',height:'433.61px',marginTop:'-5px' }}>
-              <h2 style={{ marginTop: "-15px",fontSize:'22px' }}>Sales by countries</h2>
+            <div className="card" style={{ marginLeft: "18px", width:'633.03px',height:'433.61px',marginTop:'-5px' }}>
+              <h2 style={{ marginTop: "-14px",fontSize:'22px',marginLeft:'8px' }}>Sales by countries</h2>
               <div className="d-flex">
-              <table class="table"style={{fontSize:'13px'}}> 
+              <table class="table"style={{fontSize:'13px',marginLeft:'-5px'}}> 
                 <tbody>
                   <tr>
                   <td>

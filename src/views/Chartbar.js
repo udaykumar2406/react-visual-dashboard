@@ -78,7 +78,7 @@ export default function App() {
   return (
     <BarChart
       width={600}
-      height={250}
+      height={220}
       data={data}
       margin={{
         top: 5,
